@@ -22,3 +22,35 @@ body {
     background-color: var(--color2);
 }
 
+.main-section{
+    height: 100vh;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.heading {
+    font-size: 1.5rem;
+    justify-content: center;
+}
+.rules {
+    font-size: 1rem; 
+}
+label {
+    width:auto;
+    height: auto;
+}
+.rock-paper-scissors {
+    display:grid;
+    height:auto;
+    padding-top: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+img{
+   height: auto;
+}
+input {
+    display: none;
+}
+input:checked + img {
+    border: solid 5px pink
+}
