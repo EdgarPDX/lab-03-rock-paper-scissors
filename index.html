@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <title>ROCK PAPER SCISSORS SHOOT!</title>
+</head>
+
+<body>
+    <section class="main-section">
+        <div class="rules heading">Rules
+            <ul>
+                <li>Paper beats Rock</li>
+                <li>Rock beats Scissors</li>
+                <li>Scissors beats Paper</li>
+            </ul>
+        </div>
+       <div class="rock-paper-scissors">
+           <label>
+               <h1>ROCK</h1>
+               <input type="radio" name="throw" value="rock" />
+
+            </label>
+            <label>
+                PAPER
+                <input type="radio" name="throw" value="paper" />
+ 
+             </label>
+             <label>
+                SCISSORS
+                <input type="radio" name="throw" value="scissors" />
+ 
+            </label>
+       </div>
+       <div>
+           <button>Play</button>
+       </div>
+       <div class="wld">
+           <span id="wins">Wins:</span>
+           <span id="losses">Losses:</span>
+           <span id="draws">Draws:</span>
+       </div>
+       <div id="outcome">
+           Did you win?
+       </div>
+       
+    </section>
+
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
