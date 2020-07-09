@@ -24,5 +24,14 @@ export function shoot(userShoot, computerShoot) {
 
 //create random number 1-3
 export function computerThrow(){
-    return Math.ceil((Math.random() * 3));
+    let shot = Math.ceil((Math.random() * 3));
+
+    if (shot === 1){
+        return 'rock';
+    }
+    else if (shot === 2){
+        return 'paper';
+    } else {
+        return 'scissors';
+    }
 }
