@@ -27,23 +27,44 @@ body {
     margin-left: 20px;
     margin-right: 20px;
 }
+h1{
+    font-size: 4rem;
+}
 .heading {
-    font-size: 1.5rem;
+    display: grid;
+    font-size: 2rem;
     justify-content: center;
+    align-items: center;
 }
 .rules {
+    display: grid;
     font-size: 1rem; 
+    justify-content: center;
+    align-items: center;
 }
 label {
     width:auto;
     height: auto;
 }
 .rock-paper-scissors {
+    padding-top: 100px;
     display:grid;
     height:auto;
-    padding-top: 20px;
     grid-template-columns: 1fr 1fr 1fr;
+    justify-content: stretch;
 
+}
+.button-section {
+    padding-top: 50px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    height: auto;
+    width: auto;
+    font-size: 2.5rem;
 }
 img{
    height: auto;
@@ -53,4 +74,25 @@ input {
 }
 input:checked + img {
     border: solid 5px pink
+}
+
+.computer {
+    display: grid;
+    font-size: 3rem; 
+    justify-content: center;
+    align-items: center;
+}
+
+.wld {
+    display: flex;
+    font-size: 3rem; 
+    justify-content: center;
+    align-items: center;
+}
+
+.did-you-win {
+    display: flex;
+    font-size: 5rem; 
+    justify-content: center;
+    align-items: center;
 }
