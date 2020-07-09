@@ -25,7 +25,7 @@ export function shoot(userShoot, computerShoot) {
 //create random number 1-3
 export function computerThrow(){
     let shot = Math.ceil((Math.random() * 3));
-
+//determine whether its rock/paper/scissors
     if (shot === 1){
         return 'rock';
     }
