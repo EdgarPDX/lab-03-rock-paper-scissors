@@ -6,7 +6,7 @@ const showWins = document.getElementById('wins');
 const showLosses = document.getElementById('losses');
 const showDraws = document.getElementById('draws');
 const didYouWin = document.getElementById('outcome');
-const computerGuess = document.getElementById('computer-guess')
+const computerGuess = document.getElementById('computer-guess');
 // initialize state
 let wins = 0;
 let draws = 0;
