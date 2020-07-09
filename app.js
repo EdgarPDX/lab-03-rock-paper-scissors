@@ -6,7 +6,7 @@ const showWins = document.getElementById('wins');
 const showLosses = document.getElementById('losses');
 const showDraws = document.getElementById('draws');
 const didYouWin = document.getElementById('outcome');
-
+const computerGuess = document.getElementById('computer-guess')
 // initialize state
 let wins = 0;
 let draws = 0;
@@ -38,6 +38,7 @@ button.addEventListener('click', ()=> {
     const result = shoot(userShoot, computerShoot);
     //console.log(result);
 
+        //if statements for each result 0-2
     if (result === 0){
         didYouWin.textContent = 'ITS A TIE!';
         draws++;
@@ -51,7 +52,7 @@ button.addEventListener('click', ()=> {
         losses++;
         //console.log(losses);
     }
-
+    computerGuess.textContent = 'Computer throws: ' + computerShoot;
     showDraws.textContent = 'Total DRAWS: ' + draws;
     showWins.textContent = 'Total WINS: ' + wins;
     showLosses.textContent = 'Total LOSSES: ' + losses;
