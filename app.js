@@ -19,15 +19,14 @@ button.addEventListener('click', ()=> {
     const checkedImage = document.querySelector('input:checked');
         //created variable for what the user chooses
     const userShoot = checkedImage.value;
-        console.log(userShoot);
-    // let computerShoot = null;
+        // console.log(userShoot);
+        // let computerShoot = null;
         //created generator for 1-3, 1=rock 2=paper 3=scissor
     const computerShoot = computerThrow();
-        console.log(computerShoot);
+        //console.log(computerShoot);
         //if statements to give string values to 1-3
     
-    //console.log(computerShoot);
-
+       //Gets result of computer vs user
     const result = shoot(userShoot, computerShoot);
     
 
@@ -45,7 +44,7 @@ button.addEventListener('click', ()=> {
         losses++;
         //console.log(losses);
     }
-    console.log(result);
+        //console.log(result);
     computerGuess.textContent = 'Computer throws: ' + computerShoot;
     showDraws.textContent = 'Total DRAWS: ' + draws;
     showWins.textContent = 'Total WINS: ' + wins;
