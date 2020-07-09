@@ -1,5 +1,5 @@
 // import functions 
-import { shoot, computerThrow } from'./RPS.utils.js'
+import { shoot, computerThrow } from './RPS.utils.js';
 //DOM elements
 const button = document.getElementById('button');
 const showWins = document.getElementById('wins');
@@ -23,7 +23,7 @@ button.addEventListener('click', ()=> {
     let computerShoot = null;
         //created generator for 1-3, 1=rock 2=paper 3=scissor
     const shot = computerThrow();
-        console.log(shot);
+        //console.log(shot);
         //if statements to give string values to 1-3
     if (shot === 1){
         computerShoot = 'rock';
@@ -41,15 +41,15 @@ button.addEventListener('click', ()=> {
     if (result === 0){
         didYouWin.textContent = 'ITS A TIE!';
         draws++;
-        console.log(draws);
+        //console.log(draws);
     } if (result === 1){
         didYouWin.textContent = 'YOU WON!';
         wins++;
-        console.log(wins);
+        //console.log(wins);
     } if (result === 2){
         didYouWin.textContent = 'YOU LOST!';
         losses++;
-        console.log(losses);
+        //console.log(losses);
     }
 
     showDraws.textContent = 'Total DRAWS: ' + draws;

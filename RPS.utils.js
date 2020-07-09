@@ -2,6 +2,7 @@
 //1= win
 //2= loss
 
+//creating all scenerios and returning 0-2
 export function shoot(userShoot, computerShoot) {
     if (userShoot === computerShoot){
         return 0;
@@ -21,7 +22,7 @@ export function shoot(userShoot, computerShoot) {
    
 }
 
-
+//create random number 1-3
 export function computerThrow(){
     return Math.ceil((Math.random() * 3));
 }
